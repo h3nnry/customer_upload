@@ -25,6 +25,10 @@ Project build on top of Laravel with Docker that comes with:
     ```sh
     $ docker-compose exec app php artisan migrate
     ```
+- Copy environment config file:
+    ```sh
+    $ cp .env.example .env
+    ```
 - Start queue:
     ```sh
     $ docker-compose exec app php artisan queue:work --queue=default

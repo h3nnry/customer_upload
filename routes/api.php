@@ -22,7 +22,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/load', LoadController::class);
-Route::get('/load', LoadController::class);
 Route::get('/sellers/{id}/contacts', [SellerController::class, 'getSellerContacts']);
 Route::get('/sellers/{id}/sales', [SellerController::class, 'getSellerSales']);
 Route::get('/sellers/{id}', [SellerController::class, 'getSellerData']);
